@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patickk NGAYON - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Patrick NGAYON</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Acceuil</a></li>
+                    <li><a href="#about">A propos de moi</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contactez moi</a></li>
+                    <li><a href="#technical-skills">Compétences techniques</a></li>
+                    <a href="#soft-skills"> Humaines</a>
+
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger"></div>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1> <span class="highlight">Patrick NGAYON</span></h1>
+                    <h2>full stack Web Developer  Asp.net core MVC </h2>
+                    <p>Travaillez avec moi, c'est parier sur l'avenir.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary">regardez mon travail</a> 
+                        <a href="#contact" class="btn secondary">Contactez Moi</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="pro.png" alt="Ordinateur stylé" />
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Actuellement en dernière année d’école d’ingénieur, je poursuis mon parcours en alternance, ce qui me permet de consolider mes compétences techniques tout en étant immergé dans le monde professionnel. Je travaille principalement sur des projets web en utilisant des technologies comme ASP.NET Core MVC, HTML/CSS et JavaScript.</p>
+                        <p>Passionné par la programmation et les nouvelles technologies, je m'investis pleinement dans chaque projet en cherchant constamment à apprendre et à progresser. Mon objectif est de concevoir des applications performantes, maintenables et orientées utilisateur.</p>
+                        <p>En dehors du cadre professionnel, je suis également très actif : je pratique régulièrement le tennis, le basket-ball et je fréquente assidûment la salle de sport, des activités qui renforcent ma rigueur, mon esprit d’équipe et ma persévérance.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Années d'Experiences</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Réalisés</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Entreprises Staisfaites</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Mes Projets</h2>
+                <div class="project-grid">
+                    
+                    <!-- Projet 1 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60"alt="Refonte interfaces" />
+                        </div>
+                        <div class="project-info">
+                            <h3>Développement d'une plateforme de monitoring automatisé en ASP.NET</h3>
+                            <p>Une solution centralisée de monitoring automatisé basée sur ASP.NET Web Forms.</p>
+                            <div class="project-links">
+                                <a href="monotoringProject.html" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 2 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60
+                            " />
+                        </div>
+                        <div class="project-info">
+                            <h3>Refonte d’interfaces ASP.NET en supprimant les composants Telerik</h3>
+                            <p>Modernisation des interfaces en supprimant les composants Telerik et en utilisant du HTML/CSS natif.</p>
+                            <div class="project-links">
+                                <a href="refonteProct.html" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="project-card" data-category="app">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=60" alt="Application taxi Flutter" />
+                        </div>
+                        <div class="project-info">
+                            <h3>Création d’une application de gestion de taxis avec Flutter</h3>
+                            <p>Application mobile multiplateforme pour gestion des recettes et charges des chauffeurs de taxi.</p>
+                            <div class="project-links">
+                                <a href="appMobileProject.html" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!-- Technical Skills Cards Section -->
+<section id="technical-skills" class="projects">
+    <div class="container">
+        <h2 class="section-title">Compétences Techniques</h2>
+        <div class="project-grid">
+      
+          <!-- SQL -->
+          <div class="project-card" data-category="sql">
+            <div class="project-image">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="Compétence SQL" />
+            </div>
+            <div class="project-info">
+              <h3>Développement avec le langage SQL</h3>
+              <p>Utilisation de SQL pour concevoir, manipuler et interroger les bases de données dans plusieurs projets web (réservation, monitoring, etc.).</p>
+              <div class="project-links">
+                <a href="sqlS.html" class="project-link">Voir détail</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- C# -->
+          <div class="project-card" data-category="csharp">
+            <div class="project-image">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="Compétence C#" />
+            </div>
+            <div class="project-info">
+              <h3>Développement avec le langage C#</h3>
+              <p>Maîtrise de C# pour des applications ASP.NET Web Forms et Core MVC : logique métier, manipulation des contrôles, refontes UI sans impacter le code-behind.</p>
+              <div class="project-links">
+                <a href="cS.html" class="project-link">Voir détail</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- JavaScript -->
+          <div class="project-card" data-category="javascript">
+            <div class="project-image">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Compétence JavaScript" />
+            </div>
+            <div class="project-info">
+              <h3>Développement avec le langage JavaScript</h3>
+              <p>Réalisation d’interfaces interactives avec JavaScript pur, AJAX et Semantic UI, pour améliorer l’expérience utilisateur sur ASP.NET.</p>
+              <div class="project-links">
+                <a href="javascriptS.html" class="project-link">Voir détail</a>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+  </section>
+  <!-- Soft Skills Section -->
+<!-- Soft Skills Section -->
+<section id="soft-skills" class="projects">
+    <div class="container">
+      <h2 class="section-title">Compétences Humaines</h2>
+      <div class="project-grid">
+  
+        <!-- Adaptabilité -->
+        <div class="project-card" data-category="softskill">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/32688436/pexels-photo-32688436.jpeg" alt="Adaptabilité" />
+          </div>
+          <div class="project-info">
+            <h3>Adaptabilité</h3>
+            <p>Capacité à m’ajuster rapidement à de nouveaux environnements, technologies ou processus, tout en gardant une efficacité optimale.</p>
+            <a href="adaptabilite.html" class="project-button">Voir détail</a>
+          </div>
+        </div>
+  
+        <!-- Autonomie -->
+        <div class="project-card" data-category="softskill">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/13787700/pexels-photo-13787700.jpeg" alt="Autonomie" />
+          </div>
+          <div class="project-info">
+            <h3>Autonomie</h3>
+            <p>Je suis capable de gérer mes tâches et projets de manière proactive, en prenant des décisions réfléchies et en respectant les délais.</p>
+            <a href="autonomie.html" class="project-button">Voir détail</a>
+          </div>
+        </div>
+  
+        <!-- Leadership -->
+        <div class="project-card" data-category="softskill">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/5598284/pexels-photo-5598284.jpeg" alt="Leadership" />
+          </div>
+          <div class="project-info">
+            <h3>Leadership</h3>
+            <p>Je sais motiver, fédérer et guider une équipe vers l’atteinte des objectifs communs en favorisant l’esprit de collaboration.</p>
+            <a href="leadership.html" class="project-button">Voir détail</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Mes compétences</h2>
+                <div class="skills-content">
+                    <div class="skills-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-name">HTML</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Design</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-name">UI/UX</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Responsive Design</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contactez moi</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>ngayonpatrick.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h3>Télephone</h3>
+                                <p>+1 (123) 456-7890</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Paris, Iles de France</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#" class="contact-form">
+                        <input type="text" placeholder="Votre Nom Name" required />
+                        <input type="email" placeholder="Votre address email" required />
+                        <textarea placeholder="votre demande" required></textarea>
+                        <button type="submit" class="btn primary">Envoyez moi un message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Patrick NGAYON. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
